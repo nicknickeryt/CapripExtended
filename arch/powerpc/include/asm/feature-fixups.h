@@ -256,7 +256,10 @@ extern long stf_barrier_fallback;
 extern long entry_flush_fallback;
 extern long __start___stf_entry_barrier_fixup, __stop___stf_entry_barrier_fixup;
 extern long __start___stf_exit_barrier_fixup, __stop___stf_exit_barrier_fixup;
+<<<<<<< HEAD
 extern long __start___uaccess_flush_fixup, __stop___uaccess_flush_fixup;
+=======
+>>>>>>> f69bb4e51f41 (powerpc/64s: flush L1D on kernel entry)
 extern long __start___entry_flush_fixup, __stop___entry_flush_fixup;
 extern long __start___rfi_flush_fixup, __stop___rfi_flush_fixup;
 extern long __start___barrier_nospec_fixup, __stop___barrier_nospec_fixup;
