@@ -141,4 +141,5 @@ AnyKernel3/
 binutils-32/
 binutils/
 clang/
+out/
 compile.sh
