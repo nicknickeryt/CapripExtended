@@ -143,3 +143,4 @@ binutils/
 clang/
 out/
 compile.sh
+linux-stable.sh
