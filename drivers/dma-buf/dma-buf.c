@@ -156,7 +156,6 @@ static int dma_buf_file_release(struct inode *inode, struct file *file)
 	mutex_unlock(&db_list.lock);
 
 	return 0;
->>>>>>> 32e23d54e72865286a618a2f5e01d67dc708dcdc
 }
 
 static const struct dentry_operations dma_buf_dentry_ops = {

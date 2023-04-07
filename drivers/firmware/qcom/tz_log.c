@@ -1138,11 +1138,6 @@ static ssize_t tzdbgfs_read_unencrypted(struct file *file, char __user *buf,
 	size_t count, loff_t *offp)
 {
 	int len = 0;
-#ifdef CONFIG_DEBUG_FS
-	int *tz_id =  file->private_data;
-#else
-    int *tz_id = ((struct seq_file *)file->private_data)->private;
-#endif
 	int tz_id = *(int *)(file->private_data);
 
 	if (tz_id == TZDBG_BOOT || tz_id == TZDBG_RESET ||
@@ -1507,7 +1502,6 @@ err:
 static void tzdbgfs_exit(struct platform_device *pdev)
 {
 #ifdef CONFIG_DEBUG_FS
-	struct dentry           *dent_dir;
 
 	if (g_qsee_log) {
 		qtee_shmbridge_deregister(qseelog_shmbridge_handle);
