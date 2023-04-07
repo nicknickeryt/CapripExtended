@@ -90,8 +90,8 @@ endif
 # commands
 
 ifneq ($(findstring s,$(filter-out --%,$(MAKEFLAGS))),)
-  quiet=silent_
-  tools_silent=s
+  quiet=quiet_
+  tools_silent=
 endif
 
 export quiet Q KBUILD_VERBOSE
