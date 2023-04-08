@@ -3217,8 +3217,6 @@ static void dwc3_gadget_endpoint_transfer_in_progress(struct dwc3_ep *dep,
 		stop = true;
 		dbg_event(dep->number, "STOPXFER", dep->frame_number);
 	}
-	if (stop)
-		dwc3_stop_active_transfer(dep, true, true);
 	else if (dwc3_gadget_ep_should_continue(dep))
 
 	if (stop)
