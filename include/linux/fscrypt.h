@@ -249,10 +249,13 @@ fscrypt_get_dummy_context(struct super_block *sb)
 	return NULL;
 }
 
+<<<<<<< HEAD
 static inline void fscrypt_handle_d_move(struct dentry *dentry)
 {
 }
 
+=======
+>>>>>>> parent of 159e1de201b6 (fscrypt: add fscrypt_is_nokey_name())
 /* crypto.c */
 static inline void fscrypt_enqueue_decrypt_work(struct work_struct *work)
 {
